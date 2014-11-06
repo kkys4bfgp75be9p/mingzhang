@@ -36,6 +36,8 @@ keystone.import('models');
 // bundled templates and layouts. Any runtime locals (that should be set uniquely
 // for each request) should be added to ./routes/middleware.js
 
+console.log(keystone.get('env'));
+
 keystone.set('locals', {
 	_: require('underscore'),
 	env: keystone.get('env'),
